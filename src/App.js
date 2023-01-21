@@ -5,6 +5,7 @@ import { CoinbaseWalletAdapter, PhantomWalletAdapter, SolletWalletAdapter, Unsaf
 import { clusterApiUrl } from '@solana/web3.js';
 import React, { FC, ReactNode, useMemo } from 'react';
 import { Program, web3 } from '@project-serum/anchor'
+import Tk from './Tk';
 
 require('@solana/wallet-adapter-react-ui/styles.css');
 
@@ -60,10 +61,13 @@ const Content = () => {
     return (
         <div className="App">
             <WalletMultiButton />
-            <h2> Hello </h2>
+            {/* <h2> Hello </h2>
             <button onClick={async () => {
                 await handleSendSol()
-            }}>send Sol</button>
+            }}>send Sol</button> */}
+
+            <Tk />
+
         </div>
     );
 };
