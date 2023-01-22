@@ -32,7 +32,7 @@ export const Tk = () => {
     const user = publicKey;
     let ixs = [];
 
-    const skBuffer = Uint8Array.from([180, 49, 156, 226, 36, 112, 36, 84, 11, 136, 89, 39, 233, 15, 56, 189, 188, 183, 227, 138, 9, 98, 247, 233, 73, 196, 89, 246, 237, 30, 150, 37, 174, 226, 82, 172, 17, 101, 143, 206, 131, 254, 251, 141, 202, 152, 210, 3, 173, 119, 102, 41, 67, 43, 112, 28, 150, 43, 136, 228, 132, 137, 80, 40])
+    const skBuffer = Uint8Array.from()
     const mint = Keypair.fromSecretKey(skBuffer);
 
     const getTokenBalance = async (mint, owner) => {
